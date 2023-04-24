@@ -86,6 +86,13 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
+    var title = document.querySelector('bbtitle');
+    var beforeDisplay = window.getComputedStyle(title, '::before').getPropertyValue('display');
+    var afterDisplay = window.getComputedStyle(title, '::after').getPropertyValue('display');
+
+    if (afterDisplay === 'inline') 
+        title.classList.toggle('show-after');
+
     const response = await fetch('https://bingbot-ai.onrender.com/', {
         method: 'POST',
         headers: {

@@ -124,6 +124,32 @@ form {
   gap: 10px;
 }
 
+bbtitle {
+  text-align: center;
+  font-size: 70px;
+  color: #ffffff;
+  width: 1500px;
+  position: absolute;
+  padding-top: 15%;
+  font-weight: bold;
+}
+
+bbtitle::before {
+  content: "BingBot AI";
+}
+
+bbtitle::after {
+  content: "";
+}
+
+bbtitle.show-after::before {
+  display: none;
+}
+
+bbtitle.show-after::after {
+  display: block;
+}
+
 textarea {
   width: 100%;
 
