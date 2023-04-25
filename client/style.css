@@ -128,10 +128,10 @@ bbtitle {
   text-align: center;
   font-size: 70px;
   color: #ffffff;
-  width: 1500px;
   position: absolute;
   padding-top: 15%;
   font-weight: bold;
+  width: 100%;
 }
 
 bbtitle::before {
